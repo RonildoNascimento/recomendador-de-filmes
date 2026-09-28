@@ -1,7 +1,10 @@
 # 🎬 Recomendador de Filmes com Matemática para Inteligência Artificial
 
-Projeto desenvolvido em **Python** no **Google Colab** com o objetivo de explorar conceitos matemáticos fundamentais utilizados em Inteligência Artificial por meio da construção e análise de um sistema de recomendação de filmes.
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/RonildoNascimento/recomendador-de-filmes/blob/main/Recomendador_de_Filmes.ipynb)
 
+<br>
+
+Projeto desenvolvido em **Python** no **Google Colab** com o objetivo de explorar conceitos matemáticos fundamentais utilizados em Inteligência Artificial por meio da construção e análise de um sistema de recomendação de filmes.
 O projeto combina conceitos de **Álgebra Linear, Cálculo e Métodos Numéricos**, mostrando na prática como ferramentas matemáticas podem ser utilizadas em sistemas de recomendação e modelos de Machine Learning.
 
 ## 🎯 Objetivo do Projeto
