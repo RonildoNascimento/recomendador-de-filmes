@@ -144,6 +144,73 @@ Também é explorada a aproximação de integrais utilizando o **Método dos Tra
 
 Essa etapa demonstra como computadores podem aproximar áreas e valores acumulados numericamente quando uma solução analítica não está disponível ou não é conveniente.
 
+## 📊 Principais Resultados
+
+Os experimentos realizados no notebook permitiram observar, na prática, o comportamento dos principais métodos matemáticos implementados.
+
+### 🔍 SVD e Redução de Dimensionalidade
+
+A análise da Decomposição em Valores Singulares mostrou forte concentração da informação nos primeiros componentes.
+
+Os dois primeiros componentes explicaram aproximadamente **96,5% da energia da matriz**, indicando que grande parte da estrutura dos dados pode ser representada utilizando uma quantidade reduzida de componentes.
+
+Esse resultado demonstra, na prática, o potencial da SVD para **redução de dimensionalidade, identificação de padrões latentes e compressão de informações**.
+
+### 📉 Reconstrução da Matriz
+
+Ao reconstruir a matriz utilizando diferentes quantidades de componentes, o erro diminuiu progressivamente:
+
+- **k = 1:** erro ≈ 7,754
+- **k = 2:** erro ≈ 2,919
+- **k = 3:** erro ≈ 2,218
+- **k = 8:** erro = 0
+
+O experimento evidencia o equilíbrio entre **redução de dimensionalidade e preservação da informação**.
+
+### 📈 Gradiente Descendente
+
+No treinamento do modelo simples, o algoritmo convergiu para:
+
+**w aprendido ≈ 4,334**
+
+enquanto o valor utilizado para gerar os dados foi:
+
+**w verdadeiro = 4,2**
+
+O resultado mostra que o gradiente descendente conseguiu estimar um parâmetro próximo ao valor original mesmo com a presença de ruído nos dados.
+
+### 🧮 Derivação Numérica
+
+Para a derivada cujo valor analítico em \(x=5\) é **4**, a aproximação por diferenças finitas apresentou excelente precisão para valores adequados de \(h\).
+
+Com:
+
+**h = 10⁻⁸**
+
+o erro foi aproximadamente:
+
+**2,43 × 10⁻⁸**
+
+Entretanto, utilizando **h = 10⁻¹²**, o erro voltou a aumentar, demonstrando na prática os efeitos da precisão limitada de números em ponto flutuante e do cancelamento numérico.
+
+### 📐 Integração pelo Método dos Trapézios
+
+A integral exata analisada possui valor:
+
+**9**
+
+À medida que o número de trapézios aumentou, a aproximação convergiu para esse valor.
+
+Com **1024 trapézios**, foi obtido aproximadamente:
+
+**9,000004**
+
+com erro de aproximadamente:
+
+**4,29 × 10⁻⁶**
+
+O resultado demonstra a convergência do método numérico à medida que o intervalo é dividido em um número maior de subintervalos.
+
 ## 🛠️ Tecnologias utilizadas
 
 - Python
